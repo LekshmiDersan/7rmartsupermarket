@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="adminpassword" value="12345"/>
+  <parameter name="password" value="1234"/>
+  <parameter name="adminusername1" value="dersan"/>
+  <parameter name="catname" value="mobile"/>
+  <parameter name="categoryname" value="ROSE"/>
+  <parameter name="subcatname" value="mobile mobile"/>
+  <parameter name="username" value="admin"/>
+  <parameter name="adminusername" value="Druvi"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testscript.SubCategoryTest">
+        <methods>
+          <include name="createNewSubCategory" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testscript.SubCategoryTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
